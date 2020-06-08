@@ -1,0 +1,62 @@
+*,*:before,*:after{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+/* Home | Page 1 */
+.mainhero{
+    height: 100vh;
+    width: 100vw;
+    background: url("../assets/Hero_image_small.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* ---Header--- */
+/* Place header over the Background Image */
+.header{
+    position: absolute;
+    width: 100%;
+}
+/* cneters the elements in the header */
+.header-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+/* Position the logo units from the top */
+.logo{
+    position: relative;
+    width: 8em;
+    top:20vh;
+    filter: drop-shadow(0 .5em 1em orange);
+    transition: .5s ease;
+}
+/* Place the svg to the right */
+.header-container > svg{
+    position: absolute;
+    right:5px;
+}
+@media(min-width:600px){
+    .logo{
+        width: 16em;
+        transition: 1s ease;
+    }
+}
+
+@media(min-width:900px){
+    .logo{
+        width: 24em;
+        left:20%;
+        transition: 1s ease;
+    }
+    .mainhero{
+        height: 100vh;
+        width: 100vw;
+        background: url("../assets/Hero_image.png") no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+/* Home | Page 2 */
+
